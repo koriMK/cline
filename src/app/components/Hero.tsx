@@ -31,6 +31,25 @@ export default function Hero() {
   const [activeDot, setActiveDot] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Auto-slide every second on mobile
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+    const interval = setInterval(() => {
+      setActiveDot(prev => {
+        const next = (prev + 1) % collageImages.length;
+        const items = container.querySelectorAll<HTMLElement>('.scroll-item');
+        const target = items[next];
+        if (target) {
+          container.scrollLeft = target.offsetLeft - container.offsetLeft;
+        }
+        return next;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Sync dot on manual swipe
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
@@ -86,7 +105,7 @@ export default function Hero() {
         <div
           ref={scrollRef}
           className="collage-scroll"
-          style={{ overflowX: 'auto', gap: '12px', padding: '0 20px 16px', scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' }}
+          style={{ overflowX: 'auto', gap: '12px', padding: '0 20px 16px', scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', scrollBehavior: 'smooth' }}
         >
           {collageImages.map((src, i) => (
             <div key={i} className="scroll-item" style={{ flexShrink: 0, width: '72vw', maxWidth: '280px', height: '200px', borderRadius: '10px', overflow: 'hidden', scrollSnapAlign: 'start' }}>
