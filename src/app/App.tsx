@@ -7,6 +7,7 @@ import Products, { type Product } from './components/Products';
 import Services from './components/Services';
 import Comparison from './components/Comparison';
 import HowTo from './components/HowTo';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
       <Services />
       <Comparison />
       <HowTo />
+      <Contact />
       <Footer />
     </div>
   );
