@@ -31,18 +31,20 @@ export default function Hero() {
   const [activeDot, setActiveDot] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Auto-slide every second on mobile
+  const directionRef = useRef(1);
+
+  // Auto-slide every 3 seconds on mobile, reverse at ends
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
     const interval = setInterval(() => {
       setActiveDot(prev => {
-        const next = (prev + 1) % collageImages.length;
+        const next = prev + directionRef.current;
+        if (next >= collageImages.length - 1) directionRef.current = -1;
+        if (next <= 0) directionRef.current = 1;
         const items = container.querySelectorAll<HTMLElement>('.scroll-item');
         const target = items[next];
-        if (target) {
-          container.scrollLeft = target.offsetLeft - container.offsetLeft;
-        }
+        if (target) container.scrollLeft = target.offsetLeft - container.offsetLeft;
         return next;
       });
     }, 3000);
