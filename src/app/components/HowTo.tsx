@@ -11,16 +11,16 @@ export default function HowTo() {
 
         <div className="grid md:grid-cols-3 gap-12">
           {[
-            { num: '1', Icon: ShoppingCart, color: 'orange', title: 'Browse & Select', desc: 'Browse our extensive catalog of premium cuts. Filter by type, grade, or special offers. Add items to your cart with just a click.' },
-            { num: '2', Icon: Phone, color: 'blue', title: 'Customize Your Order', desc: 'Choose quantities, specify custom cuts, select packaging preferences, and pick your delivery time slot. Pay securely via M-PESA Till: 5247893' },
-            { num: '3', Icon: Truck, color: 'green', title: 'Order Delivered Fresh', desc: 'Track your order in real-time. Receive fresh, refrigerated meat at your doorstep, on schedule. Quality guaranteed or your money back.' },
+            { num: '1', Icon: ShoppingCart, title: 'Browse & Select', desc: 'Browse our extensive catalog of premium cuts. Filter by type, grade, or special offers. Add items to your cart with just a click.' },
+            { num: '2', Icon: Phone, title: 'Customize Your Order', desc: 'Choose quantities, specify custom cuts, select packaging preferences, and pick your delivery time slot. Pay securely via M-PESA Till: 5247893' },
+            { num: '3', Icon: Truck, title: 'Order Delivered Fresh', desc: 'Track your order in real-time. Receive fresh, refrigerated meat at your doorstep, on schedule. Quality guaranteed or your money back.' },
           ].map(step => (
             <div key={step.num} className="text-center">
               <div className="relative mb-8">
-                <div className={`w-32 h-32 bg-gradient-to-br from-${step.color}-500 to-${step.color}-600 rounded-3xl mx-auto shadow-xl flex items-center justify-center`}>
-                  <step.Icon className="w-12 h-12 text-white" />
+                <div className="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center" style={{ backgroundColor: '#8e9c78' }}>
+                  <step.Icon className="w-7 h-7 text-white" />
                 </div>
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                <div className="absolute -top-3 -right-3 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">
                   {step.num}
                 </div>
               </div>

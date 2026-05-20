@@ -6,7 +6,6 @@ import TrustedBy from './components/TrustedBy';
 import Products, { type Product } from './components/Products';
 import Services from './components/Services';
 import Comparison from './components/Comparison';
-import Testimonial from './components/Testimonial';
 import HowTo from './components/HowTo';
 import Footer from './components/Footer';
 
@@ -40,7 +39,6 @@ export default function App() {
       <Products onAddToCart={addToCart} />
       <Services />
       <Comparison />
-      <Testimonial />
       <HowTo />
       <Footer />
     </div>
