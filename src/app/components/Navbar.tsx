@@ -22,7 +22,7 @@ export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
           </nav>
           <button
             onClick={onCartClick}
-            className="relative px-8 py-5 rounded-full transition flex items-center gap-2 text-white font-semibold text-base" style={{ backgroundColor: '#8e9c78' }}
+            className="relative ml-auto px-8 py-5 rounded-full transition flex items-center gap-2 text-white font-semibold text-base" style={{ backgroundColor: '#8e9c78' }}
           >
             <ShoppingCart className="w-4 h-4 text-white" />
             {cartCount > 0 && (
