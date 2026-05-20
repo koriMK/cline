@@ -9,9 +9,9 @@ export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center h-28">
+        <div className="flex items-center h-20">
           <div className="flex items-center">
-            <img src="/assets/logo.jpg" alt="Nate Poultry Meat" className="h-28 w-28 rounded-full object-cover border-2 border-gray-200" />
+            <img src="/assets/logo.jpg" alt="Nate Poultry Meat" className="h-12 w-12 rounded-full object-cover border-2 border-gray-200" />
           </div>
           <nav className="hidden md:flex flex-1 justify-center items-center space-x-10">
             <a href="#home" className="text-gray-900 hover:text-black transition text-sm font-bold">Home</a>
