@@ -31,8 +31,8 @@ export default function HowTo() {
         </div>
 
         <div className="mt-16 text-center">
-          <a href="tel:+254712345678" className="inline-block px-14 py-5 rounded-full text-lg font-semibold text-white transition" style={{ backgroundColor: '#8e9c78' }}>
-            Call Now: +254 712 345 678
+          <a href="tel:+254790897788" className="inline-block px-14 py-5 rounded-full text-lg font-semibold text-white transition" style={{ backgroundColor: '#8e9c78' }}>
+            Call Now: +254 790 897 788
           </a>
         </div>
       </div>
