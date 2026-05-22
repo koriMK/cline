@@ -16,7 +16,7 @@ export default function Comparison() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-900 mb-4">Why Choose Nate Poultry Meat?</h2>
-          <p className="text-xl text-gray-600">See how we compare to traditional options</p>
+          <p className="text-xl text-gray-600">Fresh, quality meat at the best prices in Nairobi</p>
         </div>
 
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">

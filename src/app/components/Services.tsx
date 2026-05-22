@@ -5,7 +5,7 @@ export default function Services() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1632084687062-522d7b1d4b95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxidXRjaGVyJTIwc2hvcCUyMG1lYXQlMjBkaXNwbGF5fGVufDF8fHx8MTc3OTEzMDEwNnww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="/assets/beef.jpg"
               alt="Butcher shop with premium meats"
               className="w-full h-full object-cover"
             />

@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -33,8 +33,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-gray-300">Contact</h4>
             <ul className="space-y-3 text-gray-400">
-              <li className="flex items-center gap-2"><Phone className="w-3 h-3" /><span>+254 712 345 678</span></li>
-              <li className="flex items-center gap-2"><Mail className="w-3 h-3" /><span>orders@natepoultry.co.ke</span></li>
+              <li className="flex items-center gap-2"><Phone className="w-3 h-3" /><span>0794 187 716</span></li>
+              <li className="flex items-center gap-2"><Phone className="w-3 h-3" /><span>0720 736 220</span></li>
+              <li className="flex items-center gap-2"><Phone className="w-3 h-3" /><span>0790 897 788</span></li>
               <li className="flex items-center gap-2"><MapPin className="w-3 h-3" /><span>Nairobi, Kenya</span></li>
               <li className="flex items-center gap-2"><Clock className="w-3 h-3" /><span>Mon-Sat: 7AM-8PM</span></li>
             </ul>

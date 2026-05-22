@@ -22,9 +22,9 @@ const desktopStyles = [
 
 const stats = [
   { value: 'All',  label: 'Active in Nairobi' },
-  { value: '50+',  label: 'Partners trust us' },
+  { value: '50+',  label: 'Happy customers' },
   { value: '1K+',  label: 'Orders delivered' },
-  { value: '50+',  label: 'Seller brands listed' },
+  { value: '100%', label: 'Fresh daily' },
 ];
 
 export default function Hero() {
